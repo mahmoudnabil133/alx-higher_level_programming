@@ -6,4 +6,5 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13,
 for i in numbers:
     if i == 89:
         print("{:02d}".format(i))
+        break
     print("{:02d}".format(i), end=", ")
