@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-a = 'abcdfghijklmnoprstuvwxyz'
+a = 'abcdefghijklmnopqrstuvwxyz'
 i = 0
 while (True):
     print("{}".format(a[i]), end="")
