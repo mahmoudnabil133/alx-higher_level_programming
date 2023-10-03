@@ -1,8 +1,6 @@
-#!/usr/bin/python3
-for i in range(100):
-    if i % 11 == 0:
-        continue
-    if i == 89:
-        print("{:02d}".format(i))
-        break
-    print("{:02d}".format(i), end=", ")
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
+        else:
+            print("{}{}".format(digit1, digit2), end=", ")
