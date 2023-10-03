@@ -6,6 +6,7 @@ test = -1 * number
 dig = number % 10
 if number < 0:
     dig = test % 10
+    dig *= -1
 if dig > 5:
     print(f"Last digit of {number} is {dig} and is greater than 5")
 elif dig == 0:
