@@ -8,9 +8,9 @@ def fizzbuzz():
             print("Buzz", end=" ")
             if i == 100:
                 break
-            elif i % 15 == 0:
-                print ("FizzBuzz", end=" ")
-                continue
-            else:
-                print(f"{i} ", end="")
+        elif i % 15 == 0:
+            print ("FizzBuzz", end=" ")
+            continue
+        else:
+            print(f"{i} ", end="")
     
