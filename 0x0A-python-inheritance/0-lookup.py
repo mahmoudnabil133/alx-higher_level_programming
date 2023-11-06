@@ -6,4 +6,6 @@ my module
 
 def lookup(obj):
     """ define a func"""
+
+
     return dir(obj)
