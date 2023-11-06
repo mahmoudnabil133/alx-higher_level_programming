@@ -5,4 +5,5 @@
 class MyList(list):
     """ define a class"""
     def print_sorted(self):
-        print (sorted(list(self)))
+        """ func"""
+        print(sorted(list(self)))
