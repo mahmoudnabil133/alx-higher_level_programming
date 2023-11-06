@@ -1,12 +1,16 @@
-#!/usr/python3
-""" my module"""
+#!/usr/bin/python3
+"""
+===========================
+Module with class MyList
+===========================
+"""
 
 
 class MyList(list):
-    """ define a class"""
+    """Class with method print_sorted"""
     pass
 
     def print_sorted(self):
-        """ func"""
+        """Methot that sorted a list"""
 
         print(sorted(list(self)))
