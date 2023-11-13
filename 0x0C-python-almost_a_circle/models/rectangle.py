@@ -15,6 +15,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        '''prop'''
         return self.__width
 
     @width.setter
@@ -24,6 +25,7 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        '''prop'''
         return self.__height
 
     @height.setter
@@ -33,6 +35,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        '''prop'''
         return self.__x
 
     @x.setter
@@ -42,6 +45,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        '''prop'''
         return self.__y
 
     @y.setter
@@ -50,6 +54,7 @@ class Rectangle(Base):
         self.__y = value
 
     def validate_int(self, name, value, key=True):
+        '''validate'''
         if type(value) != int:
             raise TypeError('{} must be an integer'.format(name))
         if key and value < 0:
@@ -58,19 +63,23 @@ class Rectangle(Base):
             raise ValueError('{} must be > 0'.format(name))
 
     def area(self):
+        '''area'''
         return self.__width * self.__height
 
     def display(self):
+        '''desplay'''
         for i in range(self.__height):
             for j in range(self.__width):
                 print('#', end='')
             print()
 
     def __str__(self):
+        '''str'''
         return '[Rectangle] ({}) {}/{} - {}/{}'.\
             format(self.id, self.__x, self.__y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
+        '''update'''
         j = 1
         for i in args:
             if j == 1:
@@ -101,6 +110,7 @@ class Rectangle(Base):
                     self.id = value
 
     def to_dictionary(self):
+        '''dict'''
         dic = \
             {'id': self.id, 'width': self.width,
              'height': self.height, 'x': self.x, 'y': self.y}
