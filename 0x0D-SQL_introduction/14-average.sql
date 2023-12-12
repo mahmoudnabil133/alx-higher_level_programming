@@ -1,3 +1,3 @@
 -- avg()
 SELECT AVG(score)
-from second_table;
+FROM second_table;
