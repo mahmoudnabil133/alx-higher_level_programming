@@ -1,7 +1,7 @@
 #!/usr/bin/node
 function getSecMax (list) {
   let max = parseInt(list[0]);
-  let SecMax = parseInt(list[0]);
+  let SecMax = 0;
   for (let num of list) {
     num = parseInt(num);
     if (num > max) {
