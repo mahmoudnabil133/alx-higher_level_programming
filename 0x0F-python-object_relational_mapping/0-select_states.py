@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 # this is a select rows from hbtn db
 import MySQLdb
 import sys
