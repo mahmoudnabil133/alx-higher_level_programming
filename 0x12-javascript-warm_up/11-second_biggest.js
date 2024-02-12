@@ -9,6 +9,8 @@ if (process.argv.length < 4) {
     if (num > max) {
       secMax = max;
       max = num;
+    } else if (num < max && num > secMax) {
+      secMax = num;
     }
   }
   console.log(secMax);
