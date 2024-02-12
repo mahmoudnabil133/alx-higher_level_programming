@@ -7,6 +7,3 @@ if (process.argv.length === 2) {
     console.log('C is fun');
   }
 }
-// for (const val of arr) {
-//   console.log(val);
-// }
