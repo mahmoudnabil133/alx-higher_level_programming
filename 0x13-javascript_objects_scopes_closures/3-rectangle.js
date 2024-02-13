@@ -8,6 +8,7 @@ module.exports = class Rectangle {
       this.height = h;
     }
   }
+
   print () {
     for (let i = 0; i < this.height; i++) {
       let str = '';
@@ -17,6 +18,4 @@ module.exports = class Rectangle {
       console.log(str);
     }
   }
-
 };
-  
