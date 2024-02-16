@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"docs of the file"
 import sys
 import MySQLdb
 db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
