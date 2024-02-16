@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""
+"docs of file"
 import sys
 import MySQLdb
 if __name__ == '__main__':
@@ -9,3 +9,5 @@ if __name__ == '__main__':
     rows = cur.fetchall()
     for r in rows:
         print(r)
+    cur.close()
+    db.close()
