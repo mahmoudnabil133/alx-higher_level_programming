@@ -1,3 +1,3 @@
-git add $1
-git commit -m "$1"
+git add .
+git commit -m "done changes"
 git push
