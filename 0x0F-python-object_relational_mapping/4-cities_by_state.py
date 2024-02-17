@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 "docs for file4"
 import sys
 import MySQLdb
