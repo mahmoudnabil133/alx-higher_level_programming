@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-""
+#!/usr/bin/python3
+"docs for file 5"
 import sys
 import MySQLdb
 db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
