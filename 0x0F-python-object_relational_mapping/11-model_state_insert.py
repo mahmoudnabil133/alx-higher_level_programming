@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Start link class to table in database 
 """
 import sys
@@ -19,3 +19,4 @@ if __name__ == "__main__":
     s1 = State(name = 'Louisiana')
     session.add(s1)
     session.commit()
+    print(s1.id)
