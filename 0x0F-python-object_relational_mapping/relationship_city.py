@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 "docs for model city"
 from relationship_state import Base
 from sqlalchemy import Column, Integer, ForeignKey, String
