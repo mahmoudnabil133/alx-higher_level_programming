@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 "connecting to Mysqldb"
 import sys
 import MySQLdb
