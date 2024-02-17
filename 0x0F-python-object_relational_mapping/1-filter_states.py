@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 "docs of file"
 import sys
 import MySQLdb
@@ -8,6 +8,7 @@ if __name__ == '__main__':
     cur.execute("SELECT * FROM states WHERE states.name LIKE 'N%' order by `id`")
     rows = cur.fetchall()
     for r in rows:
-        print(r)
+        if r[1][0] == 'N':
+            print(r)
     cur.close()
     db.close()
