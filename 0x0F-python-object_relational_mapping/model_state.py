@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"docs for model city"
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.orm import sessionmaker, relationship
 from sqlalchemy.ext.declarative import declarative_base
