@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database 
+"""Start link class to table in database
 """
 import sys
 from model_state import Base
@@ -19,4 +19,4 @@ if __name__ == "__main__":
 
     rows = session.query(State).filter(State.name.like("%a%")).all()
     for row in rows:
-        print(row.id,':',row.name)
+        print("{}: {}".format(row.id, row.name))
