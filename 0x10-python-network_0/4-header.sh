@@ -1,3 +1,3 @@
 #!/bin/bash
-# headers to server
+# add header variable
 curl  -H "X-School-User-Id=98: $1"
