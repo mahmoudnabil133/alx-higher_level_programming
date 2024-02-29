@@ -1,3 +1,3 @@
 #!/bin/bash
-# delete a boddy
+# headers to server
 curl  -H "X-School-User-Id=98: $1"
