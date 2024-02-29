@@ -1,3 +1,3 @@
 #!/bin/bash
 # delete a boddy
-curl -Ls -X DELETE $1 
+curl -Ls -d "X-School-User-Id=98" $1
