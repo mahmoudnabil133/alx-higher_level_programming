@@ -5,4 +5,4 @@ import requests
 if __name__ == "__main__":
     res = requests.get("https://alx-intranet.hbtn.io/status")
     print("\t- type: {}".format(type(res.text)))
-    print("\t- type: {}".format(res.status_code))
+    print("\t- content: {}".format(res.text))
