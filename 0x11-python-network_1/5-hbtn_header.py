@@ -8,4 +8,4 @@ if __name__ == "__main__":
     try:
         print(res.headers["X-Request-Id"])
     except KeyError as e:
-        print(e)
+        pass
