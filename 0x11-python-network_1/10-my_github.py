@@ -1,12 +1,14 @@
+#!/usr/bin/python3
 import requests
+import sys
+from requests.auth import HTTPBasicAuth
 
-username = "mahmoudnabil133"
-url = f"https://api.github.com/users/{username}"
-response = requests.get(url)
+if __name__ == "__main__":
 
-if response.status_code == 200:
-    user_data = response.json()
-    user_id = user_data["id"]
-    print("Your GitHub user ID is:", user_id)
-else:
-    print("Failed to fetch user data:", response.status_code)
+    url = "https://api.github.com/user"
+    response = requests.get(url, auth=HTTPBasicAuth(sys.argv[1], sys.argv[2]))
+    try:
+        user_data = response.json()
+        print(user_data["id"])
+    except Exception as e:
+       print(None)
