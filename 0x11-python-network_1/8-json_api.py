@@ -11,7 +11,7 @@ if __name__ == "__main__":
             val = sys.argv[1]
         res = requests.post("http://0.0.0.0:5000/search_user", {"q": val})
         dic_res = res.json()
-        if not res:
+        if not dic_res:
             print("No result")
         else:
             print("[{}] {}".format(dic_res.get("id"), dic_res.get("name")))
