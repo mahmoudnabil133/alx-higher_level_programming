@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-get item of header
+post data to server
 """
 from urllib import request
 from urllib import parse
@@ -10,7 +10,6 @@ if __name__ == "__main__":
     dec = {}
     dec['email'] = sys.argv[2]
     encoded_data = parse.urlencode(dec).encode("utf-8")
-    print(type(encoded_data))
     with request.urlopen(sys.argv[1], data=encoded_data) as res:
         body = res.read().decode("utf-8")
         print(body)
