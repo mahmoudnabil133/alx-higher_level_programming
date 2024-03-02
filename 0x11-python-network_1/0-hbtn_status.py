@@ -1,7 +1,6 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 from urllib import request
 "fethch url"
-
 if __name__ == "__main__":
     with request.urlopen("https://alx-intranet.hbtn.io/status") as res:
         body = res.read()
