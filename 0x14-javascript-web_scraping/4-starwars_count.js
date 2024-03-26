@@ -3,7 +3,6 @@
 const request = require('request');
 
 const url = process.argv[2];
-const wantedChar = 'https://swapi-api.alx-tools.com/api/people/18/';
 request(url, (error, response, body) => {
   if (error) {
     console.log(error);
@@ -12,7 +11,8 @@ request(url, (error, response, body) => {
     let sum = 0;
     for (const felm of felms.results) {
       for (const char of felm.characters) {
-        if (char === wantedChar) {
+        const charId = char.split('/')[5]
+        if (charId === '18') {
           sum += 1;
           break;
         }
