@@ -11,7 +11,7 @@ request(url, (error, response, body) => {
     let sum = 0;
     for (const felm of felms.results) {
       for (const char of felm.characters) {
-        const charId = char.split('/')[5]
+        const charId = char.split('/')[5];
         if (charId === '18') {
           sum += 1;
           break;
