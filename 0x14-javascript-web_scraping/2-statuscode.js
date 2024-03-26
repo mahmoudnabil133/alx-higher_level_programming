@@ -1,5 +1,5 @@
 #!/usr/bin/node
-
+//get response status code
 const request = require('request');
 
 const url = process.argv[2];
