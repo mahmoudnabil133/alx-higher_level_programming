@@ -19,6 +19,11 @@ request(url, (error, response, body) => {
         dec[id] += 1;
       }
     }
+    for (const k in dec) {
+      if (dec[k] === 0) {
+        delete dec[k];
+      }
+    }
     console.log(dec);
   }
 });
